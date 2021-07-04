@@ -27,3 +27,4 @@ jobs:
       run: cd sample-project && ./gradlew build
     - name: Run Hello World
       run: cd sample-project && ./gradlew run
+
