@@ -33,7 +33,7 @@ jobs:
       run: cd app_work1 && ./gradlew build
       
     - name: Run Hello World Test
-      run: cd app_work1 && ./gradlew test
+      run: cd app_work1 && ./gradlew test --stacktrace
 
       
     - name: Run Hello World Test.maltiplicationTest
