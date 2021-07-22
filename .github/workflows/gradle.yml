@@ -31,7 +31,11 @@ jobs:
       
     - name: Build with Gradle
       run: cd app_work1 && ./gradlew build
-    - name: Run Hello World
+      
+    - name: Run Hello World Test
+      run: cd app_work1 && ./gradlew test
+      
+    - name: Run Hello World 
       run: cd app_work1 && ./gradlew run
 
 
