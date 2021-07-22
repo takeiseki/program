@@ -8,7 +8,18 @@ public class App {
         return "Hello World Gradle on VS Code!";
     }
 
-    public static void main(String[] args) {
-        System.out.println(new App().getGreeting());
+    public int maltiplication(int x,int y) {
+        return x * y;
     }
+
+    public int division(int x,int y) {
+        return x / y;
+    }
+
+    public static void main(String[] args) {
+        int x;
+        x = new App().maltiplication(5, 6);
+        System.out.println(new App().getGreeting());
+        System.out.println(x);
+    };
 }
