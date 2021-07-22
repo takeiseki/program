@@ -37,7 +37,7 @@ jobs:
 
       
     - name: Run Hello World Test.maltiplicationTest
-      run: cd app_work1/app && ./gradlew test --tests app_work1.AppTest.maltiplicationTest
+      run: cd app_work1/app && ../gradlew test --tests app_work1.AppTest.maltiplicationTest
 
     - name: Run Hello World 
       run: cd app_work1 && ./gradlew run
