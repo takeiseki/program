@@ -34,7 +34,18 @@ jobs:
       
     - name: Build with Gradle
       run: cd app_work1 && ./gradlew build
-      
+  
+  
+      # テスト成功時はこちらのステップが実行される
+    - name: Slack Notification on Success
+      if: success()
+      uses: rtCamp/action-slack-notify@v2.0.2
+      env:
+        SLACK_CHANNEL: general
+        SLACK_TITLE: Test Success
+        SLACK_COLOR: good
+  
+  
     - name: Run Hello World Test
       run: cd app_work1 && ./gradlew test --stacktrace
 
