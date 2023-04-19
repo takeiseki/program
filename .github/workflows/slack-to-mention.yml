@@ -17,8 +17,8 @@ jobs:
       - name: Run
         uses: abeyuya/actions-mention-to-slack@v2
         with:
-          repo-token: "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"
-          slack-webhook-url: "https://hooks.slack.com/services/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"
+          repo-token: ${{ secrets.WEBHOOK_TOKEN }}
+          slack-webhook-url: "${{ secrets.SLACK_WEBHOOK_ACTIONS_URL }}"
           icon-url: https://img.icons8.com/color/256/000000/github-2.png
           bot-name: "Send Mention from abeyuya/actions-mention-to-slack"
           run-id: ${{ github.run_id }}
