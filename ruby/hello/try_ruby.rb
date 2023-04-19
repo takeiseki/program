@@ -1,7 +1,7 @@
 class Hello
   def hello
     STDOUT.sync = true
-    puts 'HELLO1'
+    puts 'HELLO1a'
   end
 end
 
